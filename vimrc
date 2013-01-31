@@ -119,9 +119,9 @@ set backspace=2
 
 ""Lint設定
 " BufWrite 時に構文チェックを行う
-autocmd BufWrite *.rb !ruby -c %
-autocmd BufWrite *.pl !perl -wc %
-autocmd BufWrite *.php !php -l %
+autocmd BufWritePost *.rb !ruby -c %
+autocmd BufWritePost *.pl !perl -wc %
+autocmd BufWritePost *.php !php -l %
 " git設定
 autocmd BufNewFile,BufRead COMMIT_EDITMSG set filetype=git
 autocmd FileType git :set fileencoding=utf-8
