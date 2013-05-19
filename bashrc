@@ -21,6 +21,7 @@ alias vim='/usr/bin/vim'
 alias perl='/usr/local/bin/perl'
 alias less='/usr/bin/less'
 alias sudo='sudo -E '
+alias sakura='ssh www2228ue.sakura.ne.jp'
 # git alias
 alias gco="git checkout"
 alias gci="git commit"
@@ -28,7 +29,7 @@ alias gst="git status"
 alias gdi="git diff"
 alias gbr="git branch"
 alias gh="git log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short"
- 
+
 calc(){ awk "BEGIN{ print $* }" ;}
 
 export CVS_RSH=ssh
