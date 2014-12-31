@@ -3,9 +3,9 @@ function parse_git_branch {
 }
 function proml {
     if [ "x$YROOT_NAME" != "x" ]; then
-        PS1="\[\033[35m\][\h@\u:\w\$(parse_git_branch) => ($YROOT_NAME)$\[\033[0m\] ";
+        PS1="\[\033[35m\][\h@\u:\w\$(parse_git_branch) => ($YROOT_NAME)]$\[\033[0m\] ";
     else
-        PS1="\[\033[35m\][\h@\u:\w\$(parse_git_branch)$\[\033[0m\] "
+        PS1="\[\033[35m\][\h@\u:\w\$(parse_git_branch)]$\[\033[0m\] "
     fi
 }
 proml
@@ -21,7 +21,8 @@ alias vim='/usr/bin/vim'
 alias perl='/usr/local/bin/perl'
 alias less='/usr/bin/less'
 alias sudo='sudo -E '
-alias sakura='ssh www2228ue.sakura.ne.jp'
+alias ssh='ssh -A'
+alias aws='ssh -i ./Desktop/AWS/aws.pem ec2-user@54.65.25.95'
 # git alias
 alias gco="git checkout"
 alias gci="git commit"
