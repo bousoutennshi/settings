@@ -22,7 +22,7 @@ alias perl='/usr/local/bin/perl'
 alias less='/usr/bin/less'
 alias sudo='sudo -E '
 alias ssh='ssh -A'
-alias aws='ssh -i ./Desktop/AWS/aws.pem ec2-user@54.65.25.95'
+alias aws='ssh -i ./Desktop/AWS/aws.pem ec2-user@54.65.76.79'
 # git alias
 alias gco="git checkout"
 alias gci="git commit"
